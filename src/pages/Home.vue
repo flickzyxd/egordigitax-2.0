@@ -4,7 +4,7 @@
 <template>
   <div class="header">
     <div class="info">
-      <div class="anyIssue"></div>
+      <div class="anyIssue">some text</div>
       <div class="infoRight">
         <div class="Language"></div>
         <div class="vk"></div>
@@ -107,7 +107,16 @@
       </div>
     </div>
   </div>
-  <div><</div>
+
+  <div class="footer">
+    <div class="footerLeft">
+      <div class="vk"></div>
+      <div class="tg"></div>
+      <div class="inst"></div>
+      <div class="yt"></div>
+    </div>
+    <div class="footerDirect"></div>
+  </div>
 </template>
 
 <style scoped>
