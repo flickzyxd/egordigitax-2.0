@@ -4,7 +4,7 @@
 <template>
   <div class="header">
     <div class="info">
-      <div class="anyIssue">some text</div>
+      <a class="anyIssue" href="https://example.com" style="text-decoration: none; color: black;">If you had any issue</a>
       <div class="infoRight">
         <div class="Language"></div>
         <div class="vk"></div>

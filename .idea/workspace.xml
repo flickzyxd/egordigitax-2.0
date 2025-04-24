@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e23ab2cc-e159-45ae-9648-fd1870a5d3d8" name="Changes" comment="" />
+    <list default="true" id="e23ab2cc-e159-45ae-9648-fd1870a5d3d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/images/2986208_logo_media_social_vk_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/3380451_telegram_communication_social media_message_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/5279112_camera_instagram_social media_instagram logo_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/5305164_play_video_youtube_youtube logo_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,8 +51,9 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\stepa\OneDrive\Рабочий стол\projects\1. Vue Projects 2025\someShit — egordigitax 2.0" />
+      <recent name="C:\Users\stepa\OneDrive\Рабочий стол\projects\1. Vue Projects 2025\someShit — egordigitax 2.0\src\images" />
       <recent name="C:\Users\stepa\OneDrive\Рабочий стол\projects\1. Vue Projects 2025\someShit — egordigitax 2.0\src" />
+      <recent name="C:\Users\stepa\OneDrive\Рабочий стол\projects\1. Vue Projects 2025\someShit — egordigitax 2.0" />
       <recent name="C:\Users\stepa\OneDrive\Рабочий стол\projects\1. Vue Projects 2025\someShit — egordigitax 2.0\src\pages" />
     </key>
   </component>
@@ -56,7 +67,9 @@
       <updated>1744049086519</updated>
       <workItem from="1744049088317" duration="448000" />
       <workItem from="1745412828580" duration="7740000" />
-      <workItem from="1745492738820" duration="7504000" />
+      <workItem from="1745492738820" duration="7819000" />
+      <workItem from="1745505319113" duration="588000" />
+      <workItem from="1745528915096" duration="6325000" />
     </task>
     <servers />
   </component>
