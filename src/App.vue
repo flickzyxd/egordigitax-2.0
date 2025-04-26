@@ -1,4 +1,11 @@
-<script setup>
+<script>
+import Card from './pages/Card.vue';
+
+export default {
+  components: {
+    Card
+  }
+}
 </script>
 
 <template>
@@ -14,35 +21,39 @@
       <div class="infoRight">
         <div class="Language">Language</div>
         <a href="https://vk.com/egordigitax" target="_blank" class="vk">
-          <img src="./images/2986208_logo_media_social_vk_icon.png" alt="Кнопка">
+          <img src="./images/vk.jpg" alt="Кнопка">
         </a>
         <a href="https://t.me/edigitax" target="_blank" class="tg">
-          <img src="./images/3380451_telegram_communication_social%20media_message_icon.png" alt="Кнопка">
+          <img src="./images/tg.jpg" alt="Кнопка">
         </a>
         <a href="https://www.instagram.com/egordigitax?igsh=cm84OXpxeXZxZXg5" target="_blank" class="inst">
-          <img src="./images/5279112_camera_instagram_social%20media_instagram%20logo_icon.png" alt="Кнопка">
+          <img src="./images/inst.jpg" alt="Кнопка">
         </a>
         <a href="https://www.youtube.com/@egordigitax" target="_blank" class="yt">
-          <img src="./images/5305164_play_video_youtube_youtube%20logo_icon.png" alt="Кнопка">
+          <img src="./images/yt.jpg" alt="Кнопка">
         </a>
       </div>
     </div>
     <div class="underHeader">
-      <div class="egordigitax">egordigitax</div>
+      <a class="egordigitax">
+        <img src="./images/egordigitax_photo-resizer.ru.jpg" alt="altuha">
+      </a>
 
-      <div class="navigator">
-        <div class="clothingButton"></div>
-        <div class="bagsButton"></div>
-        <div class="accessoriesButton"></div>
-        <div class="jewelleryButton"></div>
-        <div class="legitButton"></div>
-      </div>
+      <div class="other__header">
+        <div class="navigator">
+          <button class="navButton">Clothing</button>
+          <button class="navButton">Bags</button>
+          <button class="navButton">Accessories</button>
+          <button class="navButton">Jewellery</button>
+          <button class="navButton">Legit</button>
+        </div>
 
-      <div class="headerRight">
-        <div class="searchButton"></div>
-        <button class="featuresButton"></button>
-        <button class="accountButton"></button>
-        <button class="basketButton"></button>
+        <div class="headerRight">
+          <div class="searchButton"></div>
+          <button class="featuresButton"></button>
+          <button class="accountButton"></button>
+          <button class="basketButton"></button>
+        </div>
       </div>
     </div>
   </div>
@@ -142,6 +153,7 @@ html {
 
 .anyIssue {
   color: dimgrey;
+  font-size: 110%;
 }
 
 .info {
@@ -156,12 +168,48 @@ html {
   gap: 10px;
 }
 
+.Language {
+  display: flex;
+  justify-content: center;
+  font-size: 130%;
+}
+
+.underHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigator {
+  padding-right: 1000px;
+}
+
+.navButton {
+  background: none;
+  border: none;
+  padding: 5px;
+  margin: 0;
+  font: inherit;
+  color: dimgrey;
+  cursor: pointer;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-family: "Cascadia Code", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.other__header {
+  display: flex;
+  flex-direction: row;
+}
 .egordigitax {
   color: dodgerblue;
   font-family: "Cascadia Code", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-size: 150%;
 }
 </style>
 
