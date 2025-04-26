@@ -16,8 +16,8 @@ const products = ref([])
 async function fetchProductsMock() {
   return [
     { id: 1, name: 'Товар 1', description: 'Описание', price: 14990 },
-    { id: 2, name: 'Товар 2', description: 'Описание', price: 14990 },
-    { id: 3, name: 'Товар 3', description: 'Описание', price: 14990 },
+    { id: 2, name: 'Товар 2', description: 'Описание', price: 11490 },
+    { id: 3, name: 'Товар 3', description: 'Описание', price: 16790 },
   ]
 }
 
