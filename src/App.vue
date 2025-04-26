@@ -1,11 +1,5 @@
-<script>
+<script setup>
 import Card from './pages/Card.vue';
-
-export default {
-  components: {
-    Card
-  }
-}
 </script>
 
 <template>
@@ -35,17 +29,19 @@ export default {
       </div>
     </div>
     <div class="underHeader">
-      <a class="egordigitax">
-        <img src="./images/egordigitax_photo-resizer.ru.jpg" alt="altuha">
-      </a>
 
       <div class="other__header">
-        <div class="navigator">
-          <button class="navButton">Clothing</button>
-          <button class="navButton">Bags</button>
-          <button class="navButton">Accessories</button>
-          <button class="navButton">Jewellery</button>
-          <button class="navButton">Legit</button>
+        <div class="teachSanya">
+          <a class="egordigitax">
+            <img src="./images/egordigitax_photo-resizer.ru.jpg" alt="altuha">
+          </a>
+          <div class="navigator">
+            <button class="navButton">Clothing</button>
+            <button class="navButton">Bags</button>
+            <button class="navButton">Accessories</button>
+            <button class="navButton">Jewellery</button>
+            <button class="navButton">Legit</button>
+          </div>
         </div>
 
         <div class="headerRight">
@@ -141,6 +137,8 @@ export default {
     </div>
     <div class="footerDirect"></div>
   </div>
+
+  <card></card>
 </template>
 
 <style>
@@ -181,7 +179,9 @@ html {
 }
 
 .navigator {
-  padding-right: 1000px;
+  display: flex;
+  gap: 8px;
+
 }
 
 .navButton {
@@ -204,12 +204,20 @@ html {
 .other__header {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
 }
 .egordigitax {
   color: dodgerblue;
   font-family: "Cascadia Code", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.teachSanya {
+  display: flex;
+  gap: 70px;
+
 }
 </style>
 

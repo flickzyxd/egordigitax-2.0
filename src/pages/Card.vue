@@ -13,17 +13,18 @@ import { ref, onMounted } from "vue";
 
 const products = ref([])
 
-async function fetchProductsMock() {
-  return [
+function fetchProductsMock() {
+  return  Promise.resolve([
     { id: 1, name: 'Товар 1', description: 'Описание', price: 14990 },
     { id: 2, name: 'Товар 2', description: 'Описание', price: 11490 },
     { id: 3, name: 'Товар 3', description: 'Описание', price: 16790 },
-  ]
+  ])
 }
 
 onMounted(async () => {
   products.value = await fetchProductsMock()
 })
+
 </script>
 
 <style scoped>
