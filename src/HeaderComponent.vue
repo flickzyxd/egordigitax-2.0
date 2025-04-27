@@ -80,13 +80,11 @@ import logo from '@/images/egordigitax.jpg'
 .header .header__nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
 }
 
 .header .header__linkbar {
   display: flex;
   gap: 8px;
-
 }
 
 .header .header__link {
@@ -108,9 +106,12 @@ import logo from '@/images/egordigitax.jpg'
 
 .header .header__logo > img {
   height: 27px;
+  margin-right: 71px;
 }
 
-.header .header__actions {}
+.header .header__actions {
+  margin-left: auto;
+}
 .header .header__action {}
 .header .header__search {}
 </style>
