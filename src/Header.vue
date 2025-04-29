@@ -47,7 +47,7 @@
 </template>
 <script>
 export default {
-  name: 'NewComponent'
+  name: 'Header'
 }
 </script>
 <style>
