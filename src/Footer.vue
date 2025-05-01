@@ -14,7 +14,7 @@
         <img src="./images/yt.jpg" alt="Кнопка">
       </a>
     </div>
-    <a class="anyIssue" href="https://t.me/sometimesblanked" target="_blank" style="text-decoration: none;">Direct
+    <a class="anyIssue" href="https://www.instagram.com/egordigitax?igsh=cm84OXpxeXZxZXg5" target="_blank" style="text-decoration: none;">Direct
       message</a>
   </div>
 </template>
@@ -33,7 +33,7 @@ html {
 
 .anyIssue {
   color: dimgrey;
-  font-size: 110%;
+  font-size: 85%;
 }
 
 .footer {

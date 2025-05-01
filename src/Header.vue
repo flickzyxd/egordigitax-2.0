@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="info">
-      <a class="anyIssue" href="https://t.me/sometimesblanked" target="_blank" style="text-decoration: none;">If you had
+      <a class="anyIssue" href="https://t.me/AIsxght" target="_blank" style="text-decoration: none;">If you had
         any issue</a>
       <div class="infoRight">
         <div class="Language">Language</div>
@@ -36,10 +36,16 @@
         </div>
 
         <div class="headerRight">
-          <div class="searchButton"></div>
-          <button class="featuresButton"></button>
-          <button class="accountButton"></button>
-          <button class="basketButton"></button>
+          <input type="text" class="searchButton">
+          <a href="https://t.me/edigitax" target="_blank" class="featuresButton">
+            <img src="./images/features.jpg" alt="Кнопка">
+          </a>
+          <a href="https://t.me/edigitax" target="_blank" class="accountButton">
+            <img src="./images/account.jpg" alt="Кнопка">
+          </a>
+          <a href="https://t.me/edigitax" target="_blank" class="basketButton">
+            <img src="./images/busket.jpg" alt="Кнопка">
+          </a>
         </div>
       </div>
     </div>
@@ -59,14 +65,18 @@ html {
 }
 
 .anyIssue {
-  color: dimgrey;
-  font-size: 110%;
+  color: #f0f0f0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
 }
 
 .info {
   display: flex;
   justify-content: space-between;
   color: dimgrey;
+  margin-bottom: 16px;
 }
 
 .infoRight {
@@ -78,13 +88,23 @@ html {
 .Language {
   display: flex;
   justify-content: center;
-  font-size: 130%;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .underHeader {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.headerRight {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .navigator {
@@ -105,8 +125,9 @@ html {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  font-family: "Cascadia Code", sans-serif;
+  font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
+  font-weight: 475;
   font-style: normal;
 }
 
@@ -115,6 +136,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  padding-bottom: 24px;
 }
 
 .egordigitax {
@@ -128,5 +150,37 @@ html {
   display: flex;
   gap: 70px;
 
+}
+
+.searchButton {
+  width: 200px;
+  height: 36px;
+  border-radius: 14px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.featuresButton {
+  margin-right: 12px;
+  margin-left: 12px;
+  outline: none;
+}
+
+.accountButton {
+  margin-right: 12px;
+  outline: none;
+}
+
+.basketButton {
+  margin-right: 12px;
+  outline: none;
 }
 </style>
