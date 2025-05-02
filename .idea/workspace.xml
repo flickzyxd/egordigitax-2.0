@@ -5,20 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e23ab2cc-e159-45ae-9648-fd1870a5d3d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/egordigitax-2.0" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/account.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/account.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/busket.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/busket.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/egordigitax_photo-resizer.ru.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/features.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/features.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/inst.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/stars.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/tg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/vk.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/yt.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/LastDropSection.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Footer.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LastDrop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LastDrop.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +52,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\stepa\OneDrive\Рабочий стол\projects\1. Vue Projects 2025\someShit — egordigitax 2.0\src\components" />
       <recent name="C:\Users\stepa\OneDrive\Рабочий стол\projects\1. Vue Projects 2025\someShit — egordigitax 2.0\src\images" />
       <recent name="C:\Users\stepa\OneDrive\Рабочий стол\projects\1. Vue Projects 2025\someShit — egordigitax 2.0\src" />
       <recent name="C:\Users\stepa\OneDrive\Рабочий стол\projects\1. Vue Projects 2025\someShit — egordigitax 2.0" />
@@ -79,7 +76,8 @@
       <workItem from="1745708328186" duration="1719000" />
       <workItem from="1745865222102" duration="973000" />
       <workItem from="1745890816391" duration="16219000" />
-      <workItem from="1746113246646" duration="297000" />
+      <workItem from="1746113246646" duration="1001000" />
+      <workItem from="1746179691411" duration="12110000" />
     </task>
     <servers />
   </component>

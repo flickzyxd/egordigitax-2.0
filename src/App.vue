@@ -1,22 +1,20 @@
 <script setup>
-import Card from './pages/Card.vue';
-import Header from "@/Header.vue";
-import Footer from "@/Footer.vue";
-import LastDrop from "@/LastDrop.vue";
+import Card from './components/Card.vue';
+import Header from "@/components/Header.vue";
+import Footer from "@/components/Footer.vue";
+import LastDrop from "@/components/LastDrop.vue";
 </script>
 
 <template>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
   <div class="container">
 
   <Header/>
 
     <lastDrop/>
 
-  <card></card>
+    <router-view>
+
+    </router-view>
 
   <Footer/>
 

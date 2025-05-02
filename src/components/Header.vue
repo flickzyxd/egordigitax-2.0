@@ -1,21 +1,21 @@
 <template>
   <div class="header">
     <div class="info">
-      <a class="anyIssue" href="https://t.me/AIsxght" target="_blank" style="text-decoration: none;">If you had
+      <a class="any-issue" href="https://t.me/AIsxght" target="_blank" style="text-decoration: none;">If you had
         any issue</a>
       <div class="infoRight">
         <div class="Language">Language</div>
         <a href="https://vk.com/egordigitax" target="_blank" class="vk">
-          <img src="./images/vk.jpg" alt="Кнопка">
+          <img src="../images/vk.jpg" alt="Кнопка">
         </a>
         <a href="https://t.me/edigitax" target="_blank" class="tg">
-          <img src="./images/tg.jpg" alt="Кнопка">
+          <img src="../images/tg.jpg" alt="Кнопка">
         </a>
         <a href="https://www.instagram.com/egordigitax?igsh=cm84OXpxeXZxZXg5" target="_blank" class="inst">
-          <img src="./images/inst.jpg" alt="Кнопка">
+          <img src="../images/inst.jpg" alt="Кнопка">
         </a>
         <a href="https://www.youtube.com/@egordigitax" target="_blank" class="yt">
-          <img src="./images/yt.jpg" alt="Кнопка">
+          <img src="../images/yt.jpg" alt="Кнопка">
         </a>
       </div>
     </div>
@@ -24,7 +24,7 @@
       <div class="other__header">
         <div class="teachSanya">
           <a class="egordigitax">
-            <img src="./images/egordigitax_photo-resizer.ru.jpg" alt="altuha">
+            <img src="../images/egordigitax_photo-resizer.ru.jpg" alt="altuha">
           </a>
           <div class="navigator">
             <button class="navButton">Clothing</button>
@@ -38,13 +38,13 @@
         <div class="headerRight">
           <input type="text" class="searchButton">
           <a href="https://t.me/edigitax" target="_blank" class="featuresButton">
-            <img src="./images/features.jpg" alt="Кнопка">
+            <img src="../images/features.jpg" alt="Кнопка">
           </a>
           <a href="https://t.me/edigitax" target="_blank" class="accountButton">
-            <img src="./images/account.jpg" alt="Кнопка">
+            <img src="../images/account.jpg" alt="Кнопка">
           </a>
           <a href="https://t.me/edigitax" target="_blank" class="basketButton">
-            <img src="./images/busket.jpg" alt="Кнопка">
+            <img src="../images/busket.jpg" alt="Кнопка">
           </a>
         </div>
       </div>
@@ -64,7 +64,7 @@ html {
   box-sizing: border-box;
 }
 
-.anyIssue {
+.any-issue {
   color: #f0f0f0;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;

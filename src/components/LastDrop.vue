@@ -5,12 +5,17 @@
       <div class="lastDropTextMiddle">First look at new bag&clothes collection First look at new bag&clothes collection
         First look at new bag&clothes collection First look at new.
       </div>
-      <button class="lastDropTextButton" href="https://t.me/sometimesblanked" target="_blank"
-              style="text-decoration: none;">Details
-      </button>
+      <a
+          class="lastDropTextButton"
+          href="https://t.me/sometimesblanked"
+          target="_blank"
+          style="text-decoration: none; display: inline-block;"
+      >
+        Details
+      </a>
     </div>
     <div class="lastDropImg">
-      <img src="./images/stars.jpg" alt="altuha">
+      <img src="../images/stars.jpg" alt="altuha">
     </div>
   </div>
 </template>
@@ -50,7 +55,7 @@ body {
   background-color: lightgray;
   width: 50%;
   height: 100%;
-  margin: 56px;
+  margin: auto;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
@@ -80,6 +85,8 @@ body {
   font-optical-sizing: auto;
   font-weight: 465;
   font-style: normal;
+  max-width: 460px;
+  width: 100%;
 }
 
 .lastDropTextButton {
@@ -97,7 +104,8 @@ body {
 }
 
 .lastDropImg {
-  width: 50%
+  max-width: 744px;
+  width: 100%;
 }
 
 .lastDropImg img {

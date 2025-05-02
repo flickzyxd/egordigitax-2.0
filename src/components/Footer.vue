@@ -2,16 +2,16 @@
   <div class="footer">
     <div class="footerLeft">
       <a href="https://vk.com/egordigitax" target="_blank" class="vk">
-        <img src="./images/vk.jpg" alt="Кнопка">
+        <img src="../images/vk.jpg" alt="Кнопка">
       </a>
       <a href="https://t.me/edigitax" target="_blank" class="tg">
-        <img src="./images/tg.jpg" alt="Кнопка">
+        <img src="../images/tg.jpg" alt="Кнопка">
       </a>
       <a href="https://www.instagram.com/egordigitax?igsh=cm84OXpxeXZxZXg5" target="_blank" class="inst">
-        <img src="./images/inst.jpg" alt="Кнопка">
+        <img src="../images/inst.jpg" alt="Кнопка">
       </a>
       <a href="https://www.youtube.com/@egordigitax" target="_blank" class="yt">
-        <img src="./images/yt.jpg" alt="Кнопка">
+        <img src="../images/yt.jpg" alt="Кнопка">
       </a>
     </div>
     <a class="anyIssue" href="https://www.instagram.com/egordigitax?igsh=cm84OXpxeXZxZXg5" target="_blank" style="text-decoration: none;">Direct
@@ -34,6 +34,10 @@ html {
 .anyIssue {
   color: dimgrey;
   font-size: 85%;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: normal;
 }
 
 .footer {
