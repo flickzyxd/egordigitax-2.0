@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e23ab2cc-e159-45ae-9648-fd1870a5d3d8" name="Changes" comment="" />
+    <list default="true" id="e23ab2cc-e159-45ae-9648-fd1870a5d3d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/pages/clothingPage.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/newCollectionOnHomePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LastDrop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LastDrop.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LastDropSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LastDropSection.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/New.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/New.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +78,9 @@
       <workItem from="1745890816391" duration="16219000" />
       <workItem from="1746113246646" duration="1001000" />
       <workItem from="1746179691411" duration="12731000" />
+      <workItem from="1746195054975" duration="661000" />
+      <workItem from="1746270629042" duration="5116000" />
+      <workItem from="1746432275204" duration="1189000" />
     </task>
     <servers />
   </component>

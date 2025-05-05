@@ -3,7 +3,7 @@
     <img :src="image" :alt="image" />
     <h3 class="product-card__name">{{ name }}</h3>
     <p class="product-card__description">{{ description }}</p>
-    <span class="product-card__old-price">{{ oldPrice }} Р</span>
+    <span class="product-card__old-price">{{ oldPrice }}</span>
     <span class="product-card__discount">{{ discount }}%</span>
     <span class="product-card__price">{{ price }} Р</span>
   </div>

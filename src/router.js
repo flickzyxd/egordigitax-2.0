@@ -1,14 +1,16 @@
-import {createMemoryHistory, createRouter} from 'vue-router'
+import {createMemoryHistory, createRouter, createWebHistory} from 'vue-router'
 
 import Home from './pages/Home.vue'
+import newCollectionOnHomePage from './pages/newCollectionOnHomePage.vue'
 
 
 const routes = [
-    { path: '/', component: Home },
+    { path: '/', component: Home, name: 'Главная' },
+    { path: '/details', component: newCollectionOnHomePage, name: 'Детали'}
 ]
 
 const router = createRouter({
-    history: createMemoryHistory(),
+    history: createWebHistory(),
     routes
 })
 export default router;

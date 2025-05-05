@@ -5,14 +5,9 @@
       <div class="lastDropTextMiddle">First look at new bag&clothes collection First look at new bag&clothes collection
         First look at new bag&clothes collection First look at new.
       </div>
-      <a
-          class="lastDropTextButton"
-          href="https://t.me/sometimesblanked"
-          target="_blank"
-          style="text-decoration: none; display: inline-block;"
-      >
+      <router-link class="lastDropTextButton" style="text-decoration: none; display: inline-block;" to="/details">
         Details
-      </a>
+      </router-link>
     </div>
     <div class="lastDropImg">
       <img src="../images/stars.jpg" alt="altuha">

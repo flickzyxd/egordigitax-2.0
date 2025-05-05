@@ -6,92 +6,31 @@
     <button class="last-drop__more-button">More ></button>
   </div>
   <div class="product-list">
-    <card v-for="product in products" :image="product.image" :description="product.description"
+    <card v-for="product in displayProducts" :image="product.image" :description="product.description"
           :discount="product.discount" :name="product.name" :old-price="product.oldPrice" :price="product.price"/>
   </div>
 </template>
 <script setup>
-import {onMounted, ref} from "vue";
+import {computed, onMounted, ref} from "vue";
 import cardStar from '@/images/cardStar.jpg';
 import Card from '@/components/Card.vue'
 
 const products = ref([])
 
-function fetchProductsMock() {
-  return Promise.resolve([
-    {
-      id: 1,
-      name: 'Treasure Bag',
-      description: 'The true natural leather',
-      oldPrice: 14990,
-      discount: 40,
-      price: 10000,
-      image: cardStar
-    },
-    {
-      id: 2,
-      name: 'Treasure Bag',
-      description: 'The true natural leather',
-      oldPrice: 14990,
-      discount: 40,
-      price: 10000,
-      image: cardStar
-    },
-    {
-      id: 3,
-      name: 'Treasure Bag',
-      description: 'The true natural leather',
-      oldPrice: 14990,
-      discount: 40,
-      price: 10000,
-      image: cardStar
-    },
-    {
-      id: 4,
-      name: 'Treasure Bag',
-      description: 'The true natural leather',
-      oldPrice: 14990,
-      discount: 40,
-      price: 10000,
-      image: cardStar
-    },
-    {
-      id: 5,
-      name: 'Treasure Bag',
-      description: 'The true natural leather',
-      oldPrice: 14990,
-      discount: 40,
-      price: 10000,
-      image: cardStar
-    },
-    {
-      id: 6,
-      name: 'Treasure Bag',
-      description: 'The true natural leather',
-      oldPrice: 14990,
-      discount: 40,
-      price: 10000,
-      image: cardStar
-    },
-    {
-      id: 7,
-      name: 'Treasure Bag',
-      description: 'The true natural leather',
-      oldPrice: 14990,
-      discount: 40,
-      price: 10000,
-      image: cardStar
-    },
-    {
-      id: 8,
-      name: 'Treasure Bag',
-      description: 'The true natural leather',
-      oldPrice: 14990,
-      discount: 40,
-      price: 10000,
-      image: cardStar
-    },
-  ])
+const displayProducts = computed(() => {
+  return products.value.map(el => {
+    return {
+      ...el,
+      image: 'https://placehold.co/600x400',
+      discount: '10',
+      oldPrice: Math.floor(el.price * 1.1)
+    }
+  })
+})
+
+async function fetchProductsMock() {
+ const response = await fetch('http://45.133.246.204/catalogue', {method: 'GET'})
+  return await response.json()
 }
 
 onMounted(async () => {

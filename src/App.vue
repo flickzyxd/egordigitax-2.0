@@ -10,8 +10,6 @@ import LastDrop from "@/components/LastDrop.vue";
 
   <Header/>
 
-    <lastDrop/>
-
     <router-view>
 
     </router-view>
