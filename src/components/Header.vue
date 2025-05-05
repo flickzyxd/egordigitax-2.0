@@ -23,7 +23,7 @@
 
       <div class="other__header">
         <div class="teachSanya">
-          <a class="egordigitax">
+          <a href="/" class="egordigitax">
             <img src="../images/egordigitax_photo-resizer.ru.jpg" alt="altuha">
           </a>
           <div class="navigator">
@@ -165,8 +165,8 @@ html {
   align-items: center;
   justify-content: center;
   outline: none;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .featuresButton {
