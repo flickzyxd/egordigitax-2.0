@@ -30,6 +30,7 @@ async function fetchProductsMock() {
   return await response.json()
 }
 
+
 onMounted(async () => {
   products.value = await fetchProductsMock()
 })

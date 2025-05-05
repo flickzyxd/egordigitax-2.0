@@ -3,7 +3,9 @@
     <div class="last-drop__collection-name">
       New: Summer 2033 Hand Sewed Drop
     </div>
+    <router-link to="/details">
     <button class="last-drop__more-button">More ></button>
+    </router-link>
   </div>
   <div class="product-list">
     <card v-for="product in displayProducts" :image="product.image" :description="product.description"

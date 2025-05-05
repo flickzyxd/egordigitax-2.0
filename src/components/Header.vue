@@ -23,15 +23,30 @@
 
       <div class="other__header">
         <div class="teachSanya">
-          <a href="/" class="egordigitax">
+          <router-link to="/" class="egordigitax">
             <img src="../images/egordigitax_photo-resizer.ru.jpg" alt="altuha">
-          </a>
+          </router-link>
           <div class="navigator">
-            <button class="navButton">Clothing</button>
-            <button class="navButton">Bags</button>
-            <button class="navButton">Accessories</button>
-            <button class="navButton">Jewellery</button>
-            <button class="navButton">Legit</button>
+            <router-link to="/clothing">
+              <button class="navButton">Clothing</button>
+            </router-link>
+
+            <router-link to="/bags">
+              <button class="navButton">Bags</button>
+            </router-link>
+
+            <router-link to="/accessories">
+              <button class="navButton">Accessories</button>
+            </router-link>
+
+            <router-link to="/jewellery">
+              <button class="navButton">Jewellery</button>
+            </router-link>
+
+            <router-link to="/legit">
+              <button class="navButton">Legit</button>
+            </router-link>
+
           </div>
         </div>
 
