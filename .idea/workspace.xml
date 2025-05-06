@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e23ab2cc-e159-45ae-9648-fd1870a5d3d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/ProductPage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LastDropSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LastDropSection.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/clothingPage.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/newCollectionOnHomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NewCollectionOnHomePage.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/NewCollectionOnHomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NewCollectionOnHomePage.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/ProductPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProductPage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +75,9 @@
       <workItem from="1746179691411" duration="12731000" />
       <workItem from="1746195054975" duration="661000" />
       <workItem from="1746270629042" duration="5116000" />
-      <workItem from="1746432275204" duration="14351000" />
+      <workItem from="1746432275204" duration="14773000" />
+      <workItem from="1746452571707" duration="247000" />
+      <workItem from="1746515426172" duration="6446000" />
     </task>
     <servers />
   </component>

@@ -1,21 +1,24 @@
 <template>
   <div class="product-main">
     <div class="product-image">
-      <img src="https://placehold.co/600x400" alt="product-img">
+      <img src="https://placehold.co/600x400" alt="product-img" />
     </div>
+
     <div class="product-info">
       <div class="product-info__text">
         {{ products.name }}
+        <div class="product-info__description">
+          {{ products.description }}
+        </div>
       </div>
-      <div class="product-info__description">
-        {{ products.description }}
-      </div>
+
+      <router-link class="product-info__router-link" to="/">
+        <button class="product-info__button">< Back</button>
+      </router-link>
     </div>
-    <router-link to="/">
-      <button class="product-info__button">< Back</button>
-    </router-link>
   </div>
 </template>
+
 
 <script setup>
 import {computed, onMounted, ref} from "vue";
@@ -31,7 +34,7 @@ const displayProducts = computed(() => {
 })
 
 async function fetchProductsMock() {
-  const response = await fetch('http://45.133.246.204/catalogue/1', {method: 'GET'})
+  const response = await fetch(`http://193.124.179.62/catalogue/${route.params.id}`, {method: 'GET'})
   return await response.json()
 }
 
@@ -46,6 +49,7 @@ onMounted(async () => {
   flex-direction: row;
   margin-top: 36px;
   margin-bottom: 44px;
+  gap: 2rem;
 }
 
 .product-info {
@@ -54,7 +58,6 @@ onMounted(async () => {
 
 .product-info__button {
   display: flex;
-  justify-content: center;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -64,6 +67,11 @@ onMounted(async () => {
   background: none;
   text-decoration: none;
   color: dodgerblue;
+  flex-direction: column;
+  justify-content: space-between;
+  max-height: 100%;
+  cursor: pointer;
+  padding: 0;
 }
 
 .product-info__text {
@@ -73,7 +81,8 @@ onMounted(async () => {
   font-style: normal;
   font-size: 24px;
   color: dimgrey;
-  margin-bottom: 7px;
+  margin-bottom: 16px;
+  height: calc(100% - 42px);
 }
 
 .product-info__description {
@@ -83,5 +92,11 @@ onMounted(async () => {
   font-style: normal;
   font-size: 18px;
   color: dimgrey;
+}
+
+.product-info__router-link {
+  display: flex;
+  max-height: 450px;
+  justify-content: flex-end;
 }
 </style>

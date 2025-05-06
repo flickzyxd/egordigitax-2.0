@@ -1,6 +1,8 @@
 <template>
   <div class="product-card">
+    <router-link :to='`/product/${id}`'>
     <img :src="image" :alt="image" />
+    </router-link>
     <h3 class="product-card__name">{{ name }}</h3>
     <p class="product-card__description">{{ description }}</p>
     <span class="product-card__old-price">{{ oldPrice }}</span>
@@ -11,7 +13,7 @@
 
 <script setup>
 import {onMounted, ref} from "vue";
-defineProps(['image', 'name', 'description', 'oldPrice', 'discount', 'price'])
+defineProps(['id', 'image', 'name', 'description', 'oldPrice', 'discount', 'price'])
 
 
 </script>

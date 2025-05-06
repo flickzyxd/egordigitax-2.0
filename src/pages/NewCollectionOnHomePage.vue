@@ -1,7 +1,7 @@
 <template>
   <div class="details-main">Concept items designed by me. Some of them is physical, some is not.</div>
   <div class="details-list">
-    <card v-for="product in displayProducts" :image="product.image" :description="product.description"
+    <card v-for="product in displayProducts" :image="product.image" :id="product.id" :description="product.description"
           :discount="product.discount" :name="product.name" :old-price="product.oldPrice" :price="product.price"/>
   </div>
 </template>
@@ -26,7 +26,7 @@ const displayProducts = computed(() => {
 })
 
 async function fetchProductsMock() {
-  const response = await fetch('http://45.133.246.204/catalogue', {method: 'GET'})
+  const response = await fetch('http://193.124.179.62/catalogue', {method: 'GET'})
   return await response.json()
 }
 
