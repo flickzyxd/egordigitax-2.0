@@ -14,7 +14,6 @@
 </template>
 <script setup>
 import {computed, onMounted, ref} from "vue";
-import cardStar from '@/images/cardStar.jpg';
 import Card from '@/components/Card.vue'
 
 const products = ref([])
@@ -31,7 +30,7 @@ const displayProducts = computed(() => {
 })
 
 async function fetchProductsMock() {
- const response = await fetch('http://193.124.179.62/catalogue', {method: 'GET'})
+ const response = await fetch('http://94.232.248.56/api/catalogue', {method: 'GET'})
   return await response.json()
 }
 

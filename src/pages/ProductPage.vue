@@ -22,7 +22,6 @@
 
 <script setup>
 import {computed, onMounted, ref} from "vue";
-import ProductPage from "@/pages/ProductPage.vue";
 import {useRoute} from 'vue-router'
 
 const route = useRoute()
@@ -34,7 +33,7 @@ const displayProducts = computed(() => {
 })
 
 async function fetchProductsMock() {
-  const response = await fetch(`http://193.124.179.62/catalogue/${route.params.id}`, {method: 'GET'})
+  const response = await fetch(`http://94.232.248.56/api/catalogue/${route.params.id}`, {method: 'GET'})
   return await response.json()
 }
 
