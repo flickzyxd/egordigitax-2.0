@@ -6,14 +6,14 @@
     <h3 class="product-card__name">{{ name }}</h3>
     <p class="product-card__description">{{ description }}</p>
     <span class="product-card__old-price">{{ oldPrice }}</span>
-    <span class="product-card__discount">{{ discount }}%</span>
-    <span class="product-card__price">{{ price }} Р</span>
+    <span class="product-card__discount">{{ discount }}</span>
+    <span class="product-card__price">{{ price }}</span>
   </div>
 </template>
 
 <script setup>
 import {onMounted, ref} from "vue";
-defineProps(['id', 'image', 'name', 'description', 'oldPrice', 'discount', 'price'])
+defineProps(['id', 'currency', 'amount', 'image', 'name', 'description', 'oldPrice', 'discount', 'price'])
 
 
 </script>

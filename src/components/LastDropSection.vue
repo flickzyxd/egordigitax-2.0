@@ -9,7 +9,7 @@
   </div>
   <div class="product-list">
     <card v-for="product in displayProducts" :image="product.image" :id="product.id" :description="product.description"
-          :discount="product.discount" :name="product.name" :old-price="product.oldPrice" :price="product.price"/>
+          :discount="product.discount" :name="product.name" :old-price="product.currency" :price="product.amount"/>
   </div>
 </template>
 <script setup>
@@ -23,14 +23,12 @@ const displayProducts = computed(() => {
     return {
       ...el,
       image: 'https://placehold.co/600x400',
-      discount: '10',
-      oldPrice: Math.floor(el.price * 1.1)
     }
   })
 })
 
 async function fetchProductsMock() {
- const response = await fetch('http://94.232.248.56/api/catalogue', {method: 'GET'})
+ const response = await fetch('http://45.9.74.215:3003/api/items', {method: 'GET'})
   return await response.json()
 }
 
