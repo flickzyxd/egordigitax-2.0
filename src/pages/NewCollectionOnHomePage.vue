@@ -2,7 +2,7 @@
   <div class="details-main">Concept items designed by me. Some of them is physical, some is not.</div>
   <div class="details-list">
     <card v-for="product in displayProducts" :image="product.image" :id="product.id" :description="product.description"
-          :discount="product.discount" :name="product.name" :old-price="product.oldPrice" :price="product.price"/>
+          :discount="product.discount" :name="product.name" :old-price="product.currency" :price="product.amount"/>
   </div>
 </template>
 
@@ -19,14 +19,12 @@ const displayProducts = computed(() => {
     return {
       ...el,
       image: 'https://placehold.co/600x400',
-      discount: '10',
-      oldPrice: Math.floor(el.price * 1.1)
     }
   })
 })
 
 async function fetchProductsMock() {
-  const response = await fetch('http://94.232.248.56:3000/api/catalogue', {method: 'GET'})
+  const response = await fetch('http://45.9.74.215:3003/api/items', {method: 'GET'})
   return await response.json()
 }
 

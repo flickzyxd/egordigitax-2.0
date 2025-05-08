@@ -33,7 +33,7 @@ const displayProducts = computed(() => {
 })
 
 async function fetchProductsMock() {
-  const response = await fetch(`http://94.232.248.56/api/catalogue/${route.params.id}`, {method: 'GET'})
+  const response = await fetch(`http://45.9.74.215:3003/api/item/${route.params.id}`, {method: 'GET'})
   return await response.json()
 }
 
