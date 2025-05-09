@@ -9,7 +9,7 @@
   </div>
   <div class="product-list">
     <card v-for="product in displayProducts" :image="product.image" :id="product.id" :description="product.description"
-          :discount="product.discount" :name="product.name" :old-price="product.currency" :price="product.amount"/>
+           :name="product.name" :price="product.price.amount" :old-price="product.price.currency" />
   </div>
 </template>
 <script setup>
@@ -22,7 +22,6 @@ const displayProducts = computed(() => {
   return products.value.map(el => {
     return {
       ...el,
-      image: 'https://placehold.co/600x400',
     }
   })
 })

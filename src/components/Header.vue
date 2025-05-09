@@ -64,6 +64,7 @@
         </div>
       </div>
     </div>
+    <div class="burger">&#9776;</div> <!-- Гамбургер -->
   </div>
 </template>
 <script>
@@ -198,5 +199,23 @@ html {
 .basketButton {
   margin-right: 12px;
   outline: none;
+}
+
+.burger {
+  display: none; /* скрыт по умолчанию */
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Адаптив под мобильный */
+@media (max-width: 768px) {
+  .underHeader,
+  .headerRight {
+    display: none; /* скрываем всё */
+  }
+
+  .burger {
+    display: block; /* показываем гамбургер */
+  }
 }
 </style>

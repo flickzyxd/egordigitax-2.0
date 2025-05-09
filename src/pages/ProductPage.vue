@@ -1,16 +1,18 @@
 <template>
   <div class="product-main">
-    <div class="product-image">
-      <img src="https://placehold.co/600x400" alt="product-img" />
+    <div v-if="products && products.image" class="product-image">
+      <img :src="products.image" alt="product-img"/>
     </div>
+    <div v-else class="skeleton skeleton-image"></div>
 
     <div class="product-info">
-      <div class="product-info__text">
+      <div v-if="products && products.name" class="product-info__text">
         {{ products.name }}
         <div class="product-info__description">
           {{ products.description }}
         </div>
       </div>
+      <div v-else class="skeleton skeleton-text"></div>
 
       <router-link class="product-info__router-link" to="/">
         <button class="product-info__button">< Back</button>
@@ -18,6 +20,7 @@
     </div>
   </div>
 </template>
+
 
 
 <script setup>
@@ -98,4 +101,34 @@ onMounted(async () => {
   max-height: 450px;
   justify-content: flex-end;
 }
+
+.skeleton {
+   background-color: #e0e0e0;
+   border-radius: 4px;
+   animation: pulse 1.5s infinite ease-in-out;
+ }
+
+.skeleton-image {
+  width: 300px;
+  height: 300px;
+}
+
+.skeleton-text {
+  width: 60%;
+  height: 80px;
+  margin-bottom: 16px;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 </style>

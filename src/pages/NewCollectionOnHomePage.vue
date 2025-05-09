@@ -18,7 +18,6 @@ const displayProducts = computed(() => {
   return products.value.map(el => {
     return {
       ...el,
-      image: 'https://placehold.co/600x400',
     }
   })
 })
