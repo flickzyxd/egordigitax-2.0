@@ -9,7 +9,7 @@
   </div>
   <div class="product-list">
     <card v-for="product in displayProducts" :image="product.image" :id="product.id" :description="product.description"
-           :name="product.name" :price="product.price.amount" :old-price="product.price.currency" />
+           :name="product.name" :price="product.price.amount" :old-price="product.price.currency" :is-loading="cardIsReady" />
   </div>
 </template>
 <script setup>
@@ -25,7 +25,7 @@ const displayProducts = computed(() => {
     }
   })
 })
-
+const cardIsReady = ref(false)
 async function fetchProductsMock() {
  const response = await fetch('http://45.9.74.215:3003/api/items', {method: 'GET'})
   return await response.json()
@@ -33,6 +33,7 @@ async function fetchProductsMock() {
 
 onMounted(async () => {
   products.value = await fetchProductsMock()
+  cardIsReady.value = true
 })
 </script>
 <style scoped>

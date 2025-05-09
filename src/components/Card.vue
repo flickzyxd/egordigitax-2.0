@@ -1,6 +1,6 @@
 <template>
   <div class="product-card">
-    <template v-if="name && image">
+    <template v-if="isLoading">
       <router-link :to="`/product/${id}`">
         <img :src="image" :alt="image" />
       </router-link>
@@ -20,17 +20,9 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue'
 
-defineProps(['id', 'currency', 'amount', 'image', 'name', 'description', 'oldPrice', 'discount', 'price'])
+defineProps(['id', 'isLoading', 'currency', 'amount', 'image', 'name', 'description', 'oldPrice', 'discount', 'price'])
 
-const loading = ref(true)
-
-onMounted(() => {
-  setTimeout(() => {
-    loading.value = false
-  }, 2000) // 2 секунды задержки
-})
 </script>
 
 
@@ -86,7 +78,7 @@ h3, p {
 }
 
 .skeleton-image {
-  width: 100%;
+  width: 200px;
   height: 200px;
 }
 

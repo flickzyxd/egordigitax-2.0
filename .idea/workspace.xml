@@ -7,9 +7,7 @@
     <list default="true" id="e23ab2cc-e159-45ae-9648-fd1870a5d3d8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Card.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/LastDropSection.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LastDropSection.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/NewCollectionOnHomePage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/NewCollectionOnHomePage.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/ProductPage.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/ProductPage.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +87,7 @@
       <workItem from="1746619685502" duration="8807000" />
       <workItem from="1746646724712" duration="620000" />
       <workItem from="1746683965328" duration="9121000" />
-      <workItem from="1746782661823" duration="1237000" />
+      <workItem from="1746782661823" duration="2817000" />
     </task>
     <servers />
   </component>

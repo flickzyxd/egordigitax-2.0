@@ -1,18 +1,16 @@
 <template>
   <div class="product-main">
-    <div v-if="products && products.image" class="product-image">
+    <div class="product-image">
       <img :src="products.image" alt="product-img"/>
     </div>
-    <div v-else class="skeleton skeleton-image"></div>
 
     <div class="product-info">
-      <div v-if="products && products.name" class="product-info__text">
+      <div class="product-info__text">
         {{ products.name }}
         <div class="product-info__description">
           {{ products.description }}
         </div>
       </div>
-      <div v-else class="skeleton skeleton-text"></div>
 
       <router-link class="product-info__router-link" to="/">
         <button class="product-info__button">< Back</button>
