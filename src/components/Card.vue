@@ -1,8 +1,8 @@
 <template>
   <div class="product-card">
-    <template v-if="isLoading">
+    <template v-if="isReady">
       <router-link :to="`/product/${id}`">
-        <img :src="image" :alt="image" />
+        <img :src="image" :alt="image" class="product-card__image" />
       </router-link>
       <h3 class="product-card__name">{{ name }}</h3>
       <p class="product-card__description">{{ description }}</p>
@@ -20,11 +20,19 @@
 </template>
 
 <script setup>
-
-defineProps(['id', 'isLoading', 'currency', 'amount', 'image', 'name', 'description', 'oldPrice', 'discount', 'price'])
-
+defineProps([
+  "id",
+  "isReady",
+  "currency",
+  "amount",
+  "image",
+  "name",
+  "description",
+  "oldPrice",
+  "discount",
+  "price",
+]);
 </script>
-
 
 <style scoped>
 .product-card {
@@ -36,7 +44,8 @@ defineProps(['id', 'isLoading', 'currency', 'amount', 'image', 'name', 'descript
   object-fit: cover;
 }
 
-h3, p {
+h3,
+p {
   margin: 0;
   margin-top: 4px;
 }
@@ -57,8 +66,13 @@ h3, p {
   margin-top: 12px;
 }
 
+.product-card__image {
+  width: 300px;
+  height: 300px;
+}
+
 .product-card__old-price {
-  color: #C12020;
+  color: #c12020;
 }
 
 .product-card__discount {
@@ -66,7 +80,7 @@ h3, p {
 }
 
 .product-card__price {
-  color: #C12020;
+  color: #c12020;
   margin-right: 5px;
 }
 
@@ -78,8 +92,8 @@ h3, p {
 }
 
 .skeleton-image {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
 }
 
 .skeleton-name {

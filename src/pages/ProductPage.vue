@@ -1,7 +1,7 @@
 <template>
   <div class="product-main">
     <div class="product-image">
-      <img :src="products.image" alt="product-img"/>
+      <img :src="products.image" alt="product-img" />
     </div>
 
     <div class="product-info">
@@ -19,28 +19,29 @@
   </div>
 </template>
 
-
-
 <script setup>
-import {computed, onMounted, ref} from "vue";
-import {useRoute} from 'vue-router'
+import { computed, onMounted, ref } from "vue";
+import { useRoute } from "vue-router";
 
-const route = useRoute()
+const route = useRoute();
 
-const products = ref([])
+const products = ref([]);
 
 const displayProducts = computed(() => {
-  return products.value
-})
+  return products.value;
+});
 
 async function fetchProductsMock() {
-  const response = await fetch(`http://45.9.74.215:3003/api/item/${route.params.id}`, {method: 'GET'})
-  return await response.json()
+  const response = await fetch(
+    `http://45.9.74.215:3003/api/item/${route.params.id}`,
+    { method: "GET" },
+  );
+  return await response.json();
 }
 
 onMounted(async () => {
-  products.value = await fetchProductsMock()
-})
+  products.value = await fetchProductsMock();
+});
 </script>
 
 <style scoped>
@@ -101,10 +102,10 @@ onMounted(async () => {
 }
 
 .skeleton {
-   background-color: #e0e0e0;
-   border-radius: 4px;
-   animation: pulse 1.5s infinite ease-in-out;
- }
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
 
 .skeleton-image {
   width: 300px;
@@ -128,5 +129,5 @@ onMounted(async () => {
     opacity: 1;
   }
 }
-
 </style>
+

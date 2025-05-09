@@ -4,37 +4,49 @@
       New: Summer 2033 Hand Sewed Drop
     </div>
     <router-link to="/details">
-    <button class="last-drop__more-button">More ></button>
+      <button class="last-drop__more-button">More ></button>
     </router-link>
   </div>
+
   <div class="product-list">
-    <card v-for="product in displayProducts" :image="product.image" :id="product.id" :description="product.description"
-           :name="product.name" :price="product.price.amount" :old-price="product.price.currency" :is-loading="cardIsReady" />
+    <card
+      v-for="(product, index) in displayedProducts"
+      :key="index"
+      :image="product?.image"
+      :id="product?.id"
+      :description="product?.description"
+      :name="product?.name"
+      :price="product?.price?.amount"
+      :old-price="product?.price?.currency"
+      :is-ready="cardIsReady"
+    />
   </div>
 </template>
+
 <script setup>
-import {computed, onMounted, ref} from "vue";
-import Card from '@/components/Card.vue'
+import { ref, onMounted, computed } from "vue";
+import Card from "@/components/Card.vue";
 
-const products = ref([])
+const products = ref([]);
+const cardIsReady = ref(false);
 
-const displayProducts = computed(() => {
-  return products.value.map(el => {
-    return {
-      ...el,
-    }
-  })
-})
-const cardIsReady = ref(false)
+const placeholderCount = 24;
+
+const displayedProducts = computed(() => {
+  return cardIsReady.value
+    ? products.value
+    : Array.from({ length: placeholderCount });
+});
+
 async function fetchProductsMock() {
- const response = await fetch('http://45.9.74.215:3003/api/items', {method: 'GET'})
-  return await response.json()
+  const response = await fetch("http://45.9.74.215:3003/api/items");
+  return await response.json();
 }
 
 onMounted(async () => {
-  products.value = await fetchProductsMock()
-  cardIsReady.value = true
-})
+  products.value = await fetchProductsMock();
+  cardIsReady.value = true;
+});
 </script>
 <style scoped>
 .last-drop {
@@ -86,5 +98,5 @@ h3 {
 p {
   margin-top: 2px;
 }
-
 </style>
+
