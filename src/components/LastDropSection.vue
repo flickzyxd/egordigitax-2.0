@@ -100,10 +100,9 @@ p {
   margin-top: 2px;
 }
 
-/* Мобильная версия */
 @media (max-width: 768px) {
   .product-list {
-    grid-template-columns: 1fr; /* Только одна колонка */
+    grid-template-columns: 1fr;
     gap: 15px;
   }
 
