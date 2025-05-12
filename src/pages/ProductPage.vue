@@ -1,15 +1,19 @@
 <template>
   <div class="product-main">
     <div class="product-image">
-      <img :src="products.image" alt="product-img" />
+      <div v-if="!cardIsReady" class="skeleton skeleton-image" />
+      <img v-else :src="product.image" alt="product-img" />
     </div>
 
     <div class="product-info">
       <div class="product-info__text">
-        {{ products.name }}
-        <div class="product-info__description">
-          {{ products.description }}
-        </div>
+        <div v-if="!cardIsReady" class="skeleton skeleton-text" />
+        <template v-else>
+          {{ product.name }}
+          <div class="product-info__description">
+            {{ product.description }}
+          </div>
+        </template>
       </div>
 
       <router-link class="product-info__router-link" to="/">
@@ -19,30 +23,26 @@
   </div>
 </template>
 
+
 <script setup>
-import { computed, onMounted, ref } from "vue";
+import { ref, onMounted } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
+const product = ref({});
+const cardIsReady = ref(false);
 
-const products = ref([]);
-
-const displayProducts = computed(() => {
-  return products.value;
-});
-
-async function fetchProductsMock() {
-  const response = await fetch(
-    `http://45.9.74.215:3003/api/item/${route.params.id}`,
-    { method: "GET" },
-  );
+async function fetchProductById() {
+  const response = await fetch(`http://45.9.74.215:3003/api/item/${route.params.id}`);
   return await response.json();
 }
 
 onMounted(async () => {
-  products.value = await fetchProductsMock();
+  product.value = await fetchProductById();
+  cardIsReady.value = true;
 });
 </script>
+
 
 <style scoped>
 .product-main {
@@ -129,5 +129,34 @@ onMounted(async () => {
     opacity: 1;
   }
 }
+
+
+.skeleton-image {
+  width: 400px;
+  height: 400px;
+  border-radius: 8px;
+  background-color: #e0e0e0;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+
+.skeleton-text {
+  width: 300px;
+  height: 28px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+.skeleton-description {
+  width: 500px;
+  height: 60px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+
 </style>
 

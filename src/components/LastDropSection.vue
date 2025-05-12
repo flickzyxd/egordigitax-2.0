@@ -48,6 +48,7 @@ onMounted(async () => {
   cardIsReady.value = true;
 });
 </script>
+
 <style scoped>
 .last-drop {
   display: flex;
@@ -98,5 +99,27 @@ h3 {
 p {
   margin-top: 2px;
 }
-</style>
 
+/* Мобильная версия */
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: 1fr; /* Только одна колонка */
+    gap: 15px;
+  }
+
+  .last-drop {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .last-drop__collection-name {
+    font-size: 120%;
+  }
+
+  .last-drop__more-button {
+    justify-content: flex-start;
+  }
+}
+</style>

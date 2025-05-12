@@ -1,8 +1,17 @@
 <template>
   <div class="details-main">Concept items designed by me. Some of them is physical, some is not.</div>
   <div class="details-list">
-    <card v-for="product in displayProducts" :image="product.image" :id="product.id" :description="product.description"
-          :discount="product.discount" :name="product.name" :old-price="product.currency" :price="product.amount"/>
+    <card
+        v-for="(product, index) in displayedProducts"
+        :key="index"
+        :image="product?.image"
+        :id="product?.id"
+        :description="product?.description"
+        :name="product?.name"
+        :price="product?.price?.amount"
+        :old-price="product?.price?.currency"
+        :is-ready="cardIsReady"
+    />
   </div>
 </template>
 
@@ -13,14 +22,16 @@ import cardStar from '@/images/cardStar.jpg';
 import Card from '@/components/Card.vue'
 
 const products = ref([])
+const cardIsReady = ref(false);
 
-const displayProducts = computed(() => {
-  return products.value.map(el => {
-    return {
-      ...el,
-    }
-  })
-})
+const placeholderCount = 24;
+
+const displayedProducts = computed(() => {
+  return cardIsReady.value
+      ? products.value
+      : Array.from({ length: placeholderCount });
+});
+
 
 async function fetchProductsMock() {
   const response = await fetch('http://45.9.74.215:3003/api/items', {method: 'GET'})
@@ -30,6 +41,7 @@ async function fetchProductsMock() {
 
 onMounted(async () => {
   products.value = await fetchProductsMock()
+  cardIsReady.value = true;
 })
 </script>
 

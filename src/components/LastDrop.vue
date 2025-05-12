@@ -47,6 +47,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: lightgray;
   width: 50%;
   height: 100%;
@@ -55,6 +56,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 300;
   font-style: normal;
+  text-align: center;
 }
 
 .lastDropTextTop {
@@ -82,12 +84,12 @@ body {
   font-style: normal;
   max-width: 460px;
   width: 100%;
+  text-align: center;
 }
 
 .lastDropTextButton {
   padding: 10px 64px;
   background-color: lightgray;
-  border: 1px solid #000;
   color: dimgrey;
   cursor: pointer;
   font-size: 14px;
@@ -108,5 +110,20 @@ body {
   height: 100%;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+}
+
+@media (max-width: 768px) {
+.lastDropImg {
+  margin-top: 60px;
+  display: none;
+}
+  .lastDrop {
+    margin-top: 80px;
+  }
+
+  .lastDropLeft {
+   width: 100%;
+   margin: 15px;
+  }
 }
 </style>
