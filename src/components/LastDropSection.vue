@@ -120,5 +120,7 @@ p {
   .last-drop__more-button {
     justify-content: flex-start;
   }
+
+
 }
 </style>

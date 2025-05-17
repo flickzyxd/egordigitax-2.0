@@ -66,4 +66,10 @@ onMounted(async () => {
   gap: 21px;
   margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+  .details-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>
